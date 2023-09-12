@@ -3,39 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="app.js"></script>
+    <title>Sign Up</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    
 </head>
 
-<body>
+<body class="pl-12 pt-12">
     
     <h1>Sign Up</h1>
 
     <form>
 
-        <div>
+        <div class="mb-4 py-2">
             <p>Username: </p>
-            <input type="text" placeholder="username" id="signup-username">  
+            <input type="text" placeholder="username" id="username" class="border">  
         </div>
 
-        <div>
+        <div  class="mb-4 py-2">
             <p>Email: </p>
-            <input type="email" placeholder="email" id="signup-email">  
+            <input type="email" placeholder="email" id="signup-email" class="border">  
         </div>
 
-        <div>
+        <div  class="mb-4 py-2">
             <p>Password: </p>
-            <input type="password" placeholder="Enter your password" id="signup-password">  
+            <input type="password" placeholder="Enter your password" id="signup-password" class="border">  
         </div>
 
-        <button id="signup">Sign up</button>
-
-    
-    
+        <p class="bg-green-500 text-white inline px-2 py-1 cursor-pointer" onclick="handleSignUp"> Sign up</p>
     </form>
 
     <a href="signin.html">Sign in</a>
     <a href="index.html"> Home</a>
+
+    <script src="app.js"></script>
 
 </body>
 </html>
