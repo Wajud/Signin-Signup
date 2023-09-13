@@ -26,6 +26,9 @@ function handleSignIn(){
 
 function handleSignUp(){
 
+
+    console.log("handling signup")
+
     const userName = document.getElementById("username").value
     const signupEmail = document.getElementById("signup-email").value;
     const signupPassword = document.getElementById("signup-password").value;
