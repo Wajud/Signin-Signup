@@ -1,6 +1,7 @@
 
 function handleSignIn(){
 
+
     let localData = JSON.parse(localStorage.getItem("userInfo"));
     const signinEmail = document.getElementById("signin-email").value;
     const enteredPassword = document.getElementById("signin-password").value;
@@ -26,9 +27,6 @@ function handleSignIn(){
 
 function handleSignUp(){
 
-
-    console.log("handling signup")
-
     const userName = document.getElementById("username").value
     const signupEmail = document.getElementById("signup-email").value;
     const signupPassword = document.getElementById("signup-password").value;
@@ -42,5 +40,6 @@ function handleSignUp(){
 
     localStorage.setItem("userInfo", JSON.stringify(userInfo))
 
-   alert("That's done")
+    alert(`Account created. You can now sign in`)
+
 }
